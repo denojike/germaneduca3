@@ -1,0 +1,15 @@
+export const REGISTER_SUCCESS = "REGISTER_SUCCESS";
+export const REGISTER_FAIL = "REGISTER_FAIL";
+export const USER_LOADED = "USER_LOADED";
+export const AUTH_ERROR = "AUTH_ERROR";
+export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
+export const LOGIN_FAIL = "LOGIN_FAIL";
+export const LOGOUT = "LOGOUT";
+export const ADD_STUDY = "ADD_STUDY";
+export const UPDATE_STUDY = "UPDATE_STUDY";
+export const DELETE_STUDY = "DELETE_STUDY";
+export const DELETE_ERROR = "DELETE_ERROR";
+export const SEARCH_STUDY = "SEARCH_STUDY";
+export const GET_SINGLE_STUDY = "GET_SINGLE_STUDY";
+export const GET_ALL_STUDIES = "  GET_ALL_STUDIES";
+export const GET_FILTERED = "  GET_FILTERED";

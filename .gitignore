@@ -1,0 +1,12 @@
+node_modules/
+config/default.json
+client/bootstrap.css
+client/node_modules
+client/trashed
+client/img/germany2.jpeg
+client/img/germany3.jpeg
+client/img/germany4.jpeg
+client/img/sidebarApply.jpeg
+client/img/sidebarPass.jpeg
+client/img/sidebarStudy.jpeg
+client/img/index.js

@@ -1,0 +1,52 @@
+@import "./scss/config";
+// @import "./scss/admin";
+@import "./scss/utilities";
+@import "./scss/components/search-form";
+@import "./scss/components/input";
+@import "./scss/components/button";
+@import "./scss/components/paginate";
+@import "./scss/components/navbar";
+@import "./scss/components/error";
+@import "./scss/components/crud";
+@import "./scss/pages/courses";
+@import "./scss/pages/single-course";
+@import "./scss/admin/admin-panel";
+@import "./scss/admin/add-course";
+@import "./scss/admin/login";
+@import url("https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap");
+
+// BREADCRUMB BEGINS
+.my-bread-crumb {
+	// background: rgba($light-color, 0.5) !important;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+	display: inline-block;
+	padding-right: 0.5rem;
+	// color: rgba($black-color, 0.1) !important;
+	content: "|" !important;
+}
+.breadcrumb-item a {
+	text-decoration: none !important;
+	// color: rgba($orange-color, 0.7) !important;
+}
+
+// FOOTER BEGIN
+.my-footer {
+	height: 100px;
+	margin-top: 2rem;
+	position: relative;
+
+	a {
+		// color: $orange-color !important;
+	}
+
+	.arrow-up {
+		position: absolute;
+		// color: $orange-color;
+		opacity: 0.6;
+		right: 5%;
+		top: 32%;
+		cursor: pointer;
+	}
+}
+// Footer ends

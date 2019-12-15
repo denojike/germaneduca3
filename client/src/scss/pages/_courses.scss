@@ -1,0 +1,100 @@
+//layout
+.courses-layout {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 2rem;
+	grid-row-gap: 1rem;
+	background: #fff;
+	padding: 2rem;
+}
+@media (max-width: $bp-md) {
+	.courses-layout {
+		grid-template-columns: 1fr;
+		grid-column-gap: 0;
+		grid-row-gap: 0;
+	}
+}
+
+.courses {
+	grid-column: 1/3;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: $spacing2;
+	width: 100%;
+
+	.course {
+		border-radius: 0.235rem;
+		transition: all 0.3s ease;
+
+		&-image {
+			position: relative;
+			.image-overlay {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 1%;
+				background: rgba($color: #000000, $alpha: 0.4);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				opacity: 0;
+				transition: all 0.3s ease;
+				a {
+					color: $light-color;
+					font-weight: bold;
+					text-transform: uppercase;
+					transition: all 0.3s ease;
+					&:hover {
+						color: $primary-color;
+					}
+				}
+			}
+			img {
+				border-top-left-radius: 0.235rem;
+				border-top-right-radius: 0.235rem;
+				max-height: 300px;
+			}
+		}
+
+		&-desc {
+			padding: 1.5rem;
+			&-type {
+				color: $primary-color;
+			}
+			&-name {
+				margin-bottom: $spacing1;
+				// font-size: 1rem;
+				transition: all 0.3s ease;
+				&:hover {
+					color: $primary-color;
+					cursor: pointer;
+				}
+			}
+			&-text {
+			}
+		}
+		&-footer {
+			display: flex;
+			justify-content: space-between;
+			padding: 1rem 1.5rem 1rem 1.5rem;
+			color: $gray-color;
+			border-top: 1px solid $light-color;
+			span {
+				font-weight: bold;
+			}
+		}
+	}
+
+	.course:hover {
+		.image-overlay {
+			opacity: 1;
+		}
+	}
+}
+@media (max-width: $bp-lg) {
+	.courses {
+		grid-column: 1/3;
+		grid-template-columns: 1fr;
+	}
+}

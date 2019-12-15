@@ -1,0 +1,71 @@
+// Variables --> colors
+$primary-color: #00b16a;
+$text-color: #666;
+$gray-color: #999;
+$light-color: #f8f9fa;
+$red-color: #dc3545;
+$dark-color: #252525;
+
+// variables --> breakpoints
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
+
+//Variables --> spacing
+$spacing1: 1rem;
+$spacing2: 2rem;
+
+// Bases
+html {
+	box-sizing: border-box;
+}
+
+* {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.5;
+	scroll-behavior: smooth;
+	color: $text-color;
+	background: $light-color;
+	overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+	margin: 0;
+	padding: 0;
+}
+h2 {
+	font-size: 1rem;
+}
+h3 {
+	font-size: 0.9rem;
+}
+
+p {
+	line-height: 1.6rem;
+}
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+}

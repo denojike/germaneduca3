@@ -1,0 +1,37 @@
+.my-button {
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 0.5rem;
+	padding-top: 1rem;
+	padding-bottom: 0.5rem;
+	display: inline-block;
+
+	a {
+	}
+
+	button {
+		border-radius: 0.3rem;
+		padding: 0.5rem 1rem;
+		background: $primary-color;
+		color: $light-color;
+		font-size: 0.9rem;
+		outline: none;
+		border: 0;
+		cursor: pointer;
+		transition: all 0.3s ease-in;
+		&:hover {
+			background: rgba($primary-color, 0.9);
+			transform: scaleY(1.1);
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.my-button {
+		display: block;
+		button {
+			display: block;
+			width: 100%;
+		}
+	}
+}

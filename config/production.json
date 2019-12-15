@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://den-ojike:Denco_2_ma4@g-cluster-evfbd.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "mysecrettoken"
+}
